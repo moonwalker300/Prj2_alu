@@ -1,0 +1,4 @@
+work	"alu.vhd"
+work	"selOutput.vhd"
+work	"statemachine.vhd"
+work	"top.vhd"

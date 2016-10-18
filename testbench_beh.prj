@@ -1,0 +1,5 @@
+vhdl work "statemachine.vhd"
+vhdl work "selOutput.vhd"
+vhdl work "alu.vhd"
+vhdl work "top.vhd"
+vhdl work "testbench.vhd"

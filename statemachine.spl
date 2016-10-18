@@ -1,0 +1,10 @@
+[Inputs]
+Clk
+Rst
+=InputSW[15:0]=
+[Outputs]
+=OptA[15:0]=
+=OptB[15:0]=
+=OptOp[3:0]=
+=OutST[1:0]=
+[BiDir]

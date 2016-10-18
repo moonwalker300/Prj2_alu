@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "E:/ISE/alu/testbench_isim_beh.exe" -prj "E:/ISE/alu/testbench_beh.prj" "work.testbench" 

@@ -1,0 +1,5 @@
+vhdl isim_temp "statemachine.vhd"
+vhdl isim_temp "selOutput.vhd"
+vhdl isim_temp "alu.vhd"
+vhdl isim_temp "top.vhd"
+vhdl isim_temp "testbench.vhd"

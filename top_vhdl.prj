@@ -1,0 +1,4 @@
+vhdl work "E:\ISE\alu\statemachine.vhd"
+vhdl work "E:\ISE\alu\selOutput.vhd"
+vhdl work "E:\ISE\alu\alu.vhd"
+vhdl work "E:\ISE\alu\top.vhd"
