@@ -76,6 +76,11 @@ BEGIN
    Clk_process :process
    begin
 		Clk <= '0';
+		InputSW <= "0000000000000100";
+		wait for Clk_period/2;
+		Clk <= '1';
+		wait for Clk_period/2;
+		Clk <= '0';
 		InputSW <= "0000000000001000";
 		wait for Clk_period/2;
 		Clk <= '1';
@@ -86,12 +91,7 @@ BEGIN
 		Clk <= '1';
 		wait for Clk_period/2;
 		Clk <= '0';
-		InputSW <= "0000000000000000";
-		wait for Clk_period/2;
-		Clk <= '1';
-		wait for Clk_period/2;
-		Clk <= '0';
-		InputSW <= "0000000000100000";
+		InputSW <= "1000000011101000";
 		wait for Clk_period/2;
 		Clk <= '1';
 		wait for Clk_period/2;

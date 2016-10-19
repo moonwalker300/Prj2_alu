@@ -72,7 +72,7 @@ begin
 				when "0001" =>
 					tmpC := (not tmpB) + "000000000000001";
 					res := tmpA + tmpC;
-					if (res < tmpA) then
+					if (tmpA < tmpB) then
 						tmpFlag(3) := '1';
 					else
 						tmpFlag(3) := '0';
@@ -109,7 +109,7 @@ begin
 							else
 								tmpInt := conv_integer(tmpB);
 								res := "0000000000000000";
-								tmpA(15 - tmpInt downto 0) := res(15 downto tmpInt);
+								res(15 - tmpInt downto 0) := tmpA(15 downto tmpInt);
 							end if;
 						when "1000" =>
 							if (tmpB >= "0000000000010000") then
@@ -125,7 +125,7 @@ begin
 								else
 									res := "1111111111111111";
 								end if;
-								tmpA(15 - tmpInt downto 0) := res(15 downto tmpInt);
+								res(15 - tmpInt downto 0) := tmpA(15 downto tmpInt);
 							end if;
 						when others =>
 							tmpC(3 downto 0) := tmpB(3 downto 0);

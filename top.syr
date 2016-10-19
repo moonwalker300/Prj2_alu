@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: top.prj
 
@@ -112,8 +112,7 @@ Entity <alu> (Architecture <behavioral>) compiled.
 Compiling vhdl file "E:/ISE/alu/selOutput.vhd" in Library work.
 Architecture behavioral of Entity seloutput is up to date.
 Compiling vhdl file "E:/ISE/alu/top.vhd" in Library work.
-Entity <top> compiled.
-Entity <top> (Architecture <structual>) compiled.
+Architecture structual of Entity top is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -206,68 +205,89 @@ WARNING:Xst:737 - Found 1-bit latch for signal <res_8>. Latches may be generated
 WARNING:Xst:737 - Found 1-bit latch for signal <res_9>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Found 16-bit adder for signal <res$add0002> created at line 54.
     Found 16-bit adder for signal <res$add0003> created at line 74.
-    Found 1-bit 16-to-1 multiplexer for signal <res_0$mux0003> created at line 133.
+    Found 16-bit adder for signal <res$addsub0000> created at line 73.
+    Found 1-bit 16-to-1 multiplexer for signal <res_0$mux0006> created at line 51.
+    Found 1-bit 16-to-1 multiplexer for signal <res_0$mux0007> created at line 51.
+    Found 1-bit 16-to-1 multiplexer for signal <res_0$mux0008> created at line 133.
     Found 1-bit xor2 for signal <res_0$xor0000> created at line 96.
-    Found 1-bit 16-to-1 multiplexer for signal <res_1$mux0003> created at line 133.
+    Found 1-bit 16-to-1 multiplexer for signal <res_1$mux0005> created at line 51.
+    Found 1-bit 16-to-1 multiplexer for signal <res_1$mux0006> created at line 51.
+    Found 1-bit 16-to-1 multiplexer for signal <res_1$mux0007> created at line 133.
     Found 1-bit xor2 for signal <res_1$xor0000> created at line 96.
+    Found 1-bit 8-to-1 multiplexer for signal <res_10$mux0005> created at line 51.
+    Found 1-bit 8-to-1 multiplexer for signal <res_10$mux0006> created at line 51.
     Found 1-bit xor2 for signal <res_10$xor0000> created at line 96.
-    Found 1-bit 16-to-1 multiplexer for signal <res_11$mux0003> created at line 51.
-    Found 1-bit 4-to-1 multiplexer for signal <res_11$mux0004> created at line 133.
-    Found 1-bit 16-to-1 multiplexer for signal <res_11$mux0005> created at line 133.
+    Found 1-bit 16-to-1 multiplexer for signal <res_11$mux0005> created at line 51.
+    Found 1-bit 4-to-1 multiplexer for signal <res_11$mux0006> created at line 133.
+    Found 1-bit 16-to-1 multiplexer for signal <res_11$mux0007> created at line 133.
     Found 1-bit xor2 for signal <res_11$xor0000> created at line 96.
-    Found 1-bit 16-to-1 multiplexer for signal <res_12$mux0003> created at line 51.
-    Found 1-bit 16-to-1 multiplexer for signal <res_12$mux0004> created at line 133.
-    Found 1-bit 4-to-1 multiplexer for signal <res_12$mux0005> created at line 133.
-    Found 1-bit 16-to-1 multiplexer for signal <res_12$mux0007> created at line 133.
+    Found 1-bit 16-to-1 multiplexer for signal <res_12$mux0005> created at line 51.
+    Found 1-bit 4-to-1 multiplexer for signal <res_12$mux0006> created at line 51.
+    Found 1-bit 4-to-1 multiplexer for signal <res_12$mux0007> created at line 51.
+    Found 1-bit 16-to-1 multiplexer for signal <res_12$mux0008> created at line 133.
+    Found 1-bit 4-to-1 multiplexer for signal <res_12$mux0009> created at line 133.
+    Found 1-bit 16-to-1 multiplexer for signal <res_12$mux0011> created at line 133.
     Found 1-bit xor2 for signal <res_12$xor0000> created at line 96.
-    Found 1-bit 16-to-1 multiplexer for signal <res_13$mux0003> created at line 51.
-    Found 1-bit 16-to-1 multiplexer for signal <res_13$mux0004> created at line 133.
+    Found 1-bit 16-to-1 multiplexer for signal <res_13$mux0005> created at line 51.
+    Found 1-bit 4-to-1 multiplexer for signal <res_13$mux0006> created at line 51.
+    Found 1-bit 4-to-1 multiplexer for signal <res_13$mux0007> created at line 51.
+    Found 1-bit 16-to-1 multiplexer for signal <res_13$mux0008> created at line 133.
     Found 1-bit xor2 for signal <res_13$xor0000> created at line 96.
-    Found 1-bit 16-to-1 multiplexer for signal <res_14$mux0003> created at line 51.
-    Found 1-bit 16-to-1 multiplexer for signal <res_14$mux0004> created at line 133.
+    Found 1-bit 16-to-1 multiplexer for signal <res_14$mux0005> created at line 51.
+    Found 1-bit 16-to-1 multiplexer for signal <res_14$mux0006> created at line 133.
     Found 1-bit xor2 for signal <res_14$xor0000> created at line 96.
     Found 16-bit comparator greatequal for signal <res_15$cmp_ge0000> created at line 99.
-    Found 1-bit 16-to-1 multiplexer for signal <res_15$mux0003> created at line 51.
-    Found 1-bit 16-to-1 multiplexer for signal <res_15$mux0004> created at line 133.
+    Found 1-bit 16-to-1 multiplexer for signal <res_15$mux0005> created at line 51.
+    Found 1-bit 16-to-1 multiplexer for signal <res_15$mux0006> created at line 133.
     Found 1-bit xor2 for signal <res_15$xor0000> created at line 96.
-    Found 1-bit 4-to-1 multiplexer for signal <res_2$mux0003> created at line 51.
-    Found 1-bit 4-to-1 multiplexer for signal <res_2$mux0004> created at line 133.
-    Found 1-bit 4-to-1 multiplexer for signal <res_2$mux0005> created at line 133.
-    Found 1-bit 4-to-1 multiplexer for signal <res_2$mux0006> created at line 133.
-    Found 1-bit 16-to-1 multiplexer for signal <res_2$mux0007> created at line 133.
-    Found 1-bit 4-to-1 multiplexer for signal <res_2$mux0011> created at line 133.
+    Found 1-bit 4-to-1 multiplexer for signal <res_2$mux0005> created at line 51.
+    Found 1-bit 16-to-1 multiplexer for signal <res_2$mux0006> created at line 51.
+    Found 1-bit 16-to-1 multiplexer for signal <res_2$mux0007> created at line 51.
+    Found 1-bit 4-to-1 multiplexer for signal <res_2$mux0008> created at line 133.
+    Found 1-bit 4-to-1 multiplexer for signal <res_2$mux0009> created at line 133.
+    Found 1-bit 4-to-1 multiplexer for signal <res_2$mux0010> created at line 133.
+    Found 1-bit 16-to-1 multiplexer for signal <res_2$mux0011> created at line 133.
+    Found 1-bit 4-to-1 multiplexer for signal <res_2$mux0015> created at line 133.
     Found 1-bit xor2 for signal <res_2$xor0000> created at line 96.
-    Found 1-bit 4-to-1 multiplexer for signal <res_3$mux0003> created at line 51.
-    Found 1-bit 4-to-1 multiplexer for signal <res_3$mux0004> created at line 133.
-    Found 1-bit 4-to-1 multiplexer for signal <res_3$mux0005> created at line 133.
-    Found 1-bit 4-to-1 multiplexer for signal <res_3$mux0006> created at line 133.
-    Found 1-bit 4-to-1 multiplexer for signal <res_3$mux0007> created at line 133.
-    Found 1-bit 16-to-1 multiplexer for signal <res_3$mux0008> created at line 133.
-    Found 1-bit 4-to-1 multiplexer for signal <res_3$mux0013> created at line 133.
+    Found 1-bit 4-to-1 multiplexer for signal <res_3$mux0005> created at line 51.
+    Found 1-bit 16-to-1 multiplexer for signal <res_3$mux0006> created at line 51.
+    Found 1-bit 16-to-1 multiplexer for signal <res_3$mux0007> created at line 51.
+    Found 1-bit 4-to-1 multiplexer for signal <res_3$mux0008> created at line 133.
+    Found 1-bit 4-to-1 multiplexer for signal <res_3$mux0009> created at line 133.
+    Found 1-bit 4-to-1 multiplexer for signal <res_3$mux0010> created at line 133.
+    Found 1-bit 4-to-1 multiplexer for signal <res_3$mux0011> created at line 133.
+    Found 1-bit 16-to-1 multiplexer for signal <res_3$mux0012> created at line 133.
+    Found 1-bit 4-to-1 multiplexer for signal <res_3$mux0017> created at line 133.
     Found 1-bit xor2 for signal <res_3$xor0000> created at line 96.
+    Found 1-bit 16-to-1 multiplexer for signal <res_4$mux0005> created at line 51.
+    Found 1-bit 16-to-1 multiplexer for signal <res_4$mux0006> created at line 51.
     Found 1-bit xor2 for signal <res_4$xor0000> created at line 96.
-    Found 1-bit 8-to-1 multiplexer for signal <res_5$mux0003> created at line 51.
-    Found 1-bit 8-to-1 multiplexer for signal <res_5$mux0004> created at line 133.
-    Found 1-bit 8-to-1 multiplexer for signal <res_5$mux0005> created at line 133.
+    Found 1-bit 8-to-1 multiplexer for signal <res_5$mux0005> created at line 51.
+    Found 1-bit 8-to-1 multiplexer for signal <res_5$mux0006> created at line 133.
+    Found 1-bit 8-to-1 multiplexer for signal <res_5$mux0007> created at line 133.
     Found 1-bit xor2 for signal <res_5$xor0000> created at line 96.
-    Found 1-bit 8-to-1 multiplexer for signal <res_6$mux0003> created at line 51.
-    Found 1-bit 8-to-1 multiplexer for signal <res_6$mux0004> created at line 133.
-    Found 1-bit 8-to-1 multiplexer for signal <res_6$mux0005> created at line 133.
+    Found 1-bit 8-to-1 multiplexer for signal <res_6$mux0005> created at line 51.
+    Found 1-bit 8-to-1 multiplexer for signal <res_6$mux0006> created at line 133.
+    Found 1-bit 8-to-1 multiplexer for signal <res_6$mux0007> created at line 133.
     Found 1-bit xor2 for signal <res_6$xor0000> created at line 96.
-    Found 1-bit 8-to-1 multiplexer for signal <res_7$mux0003> created at line 51.
-    Found 1-bit 8-to-1 multiplexer for signal <res_7$mux0004> created at line 133.
-    Found 1-bit 8-to-1 multiplexer for signal <res_7$mux0005> created at line 133.
+    Found 1-bit 8-to-1 multiplexer for signal <res_7$mux0005> created at line 51.
+    Found 1-bit 8-to-1 multiplexer for signal <res_7$mux0006> created at line 133.
+    Found 1-bit 8-to-1 multiplexer for signal <res_7$mux0007> created at line 133.
     Found 1-bit xor2 for signal <res_7$xor0000> created at line 96.
-    Found 1-bit 8-to-1 multiplexer for signal <res_8$mux0003> created at line 133.
+    Found 1-bit 8-to-1 multiplexer for signal <res_8$mux0005> created at line 51.
+    Found 1-bit 8-to-1 multiplexer for signal <res_8$mux0006> created at line 51.
+    Found 1-bit 8-to-1 multiplexer for signal <res_8$mux0007> created at line 133.
     Found 1-bit xor2 for signal <res_8$xor0000> created at line 96.
-    Found 1-bit 8-to-1 multiplexer for signal <res_9$mux0003> created at line 133.
+    Found 1-bit 8-to-1 multiplexer for signal <res_9$mux0005> created at line 51.
+    Found 1-bit 8-to-1 multiplexer for signal <res_9$mux0006> created at line 51.
+    Found 1-bit 8-to-1 multiplexer for signal <res_9$mux0007> created at line 133.
     Found 1-bit xor2 for signal <res_9$xor0000> created at line 96.
     Found 16-bit comparator less for signal <tmpFlag_3$cmp_lt0000> created at line 55.
     Found 16-bit comparator less for signal <tmpFlag_3$cmp_lt0001> created at line 75.
     Summary:
-	inferred   2 Adder/Subtractor(s).
+	inferred   3 Adder/Subtractor(s).
 	inferred   3 Comparator(s).
-	inferred  39 Multiplexer(s).
+	inferred  59 Multiplexer(s).
 Unit <alu> synthesized.
 
 
@@ -288,8 +308,8 @@ Unit <top> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 2
- 16-bit adder                                          : 2
+# Adders/Subtractors                                   : 3
+ 16-bit adder                                          : 3
 # Latches                                              : 21
  1-bit latch                                           : 16
  16-bit latch                                          : 3
@@ -297,10 +317,10 @@ Macro Statistics
 # Comparators                                          : 3
  16-bit comparator greatequal                          : 1
  16-bit comparator less                                : 2
-# Multiplexers                                         : 55
- 1-bit 16-to-1 multiplexer                             : 15
- 1-bit 4-to-1 multiplexer                              : 29
- 1-bit 8-to-1 multiplexer                              : 11
+# Multiplexers                                         : 75
+ 1-bit 16-to-1 multiplexer                             : 25
+ 1-bit 4-to-1 multiplexer                              : 33
+ 1-bit 8-to-1 multiplexer                              : 17
 # Xors                                                 : 16
  1-bit xor2                                            : 16
 
@@ -326,8 +346,8 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 1
-# Adders/Subtractors                                   : 2
- 16-bit adder                                          : 2
+# Adders/Subtractors                                   : 3
+ 16-bit adder                                          : 3
 # Latches                                              : 20
  1-bit latch                                           : 15
  16-bit latch                                          : 3
@@ -335,10 +355,10 @@ Macro Statistics
 # Comparators                                          : 3
  16-bit comparator greatequal                          : 1
  16-bit comparator less                                : 2
-# Multiplexers                                         : 51
- 1-bit 16-to-1 multiplexer                             : 15
- 1-bit 4-to-1 multiplexer                              : 27
- 1-bit 8-to-1 multiplexer                              : 9
+# Multiplexers                                         : 71
+ 1-bit 16-to-1 multiplexer                             : 25
+ 1-bit 4-to-1 multiplexer                              : 31
+ 1-bit 8-to-1 multiplexer                              : 15
 # Xors                                                 : 16
  1-bit xor2                                            : 16
 
@@ -347,9 +367,6 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-INFO:Xst:2261 - The FF/Latch <flag_1> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <Fout_15> 
-INFO:Xst:2261 - The FF/Latch <res_8> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <Fout_8> 
-INFO:Xst:2261 - The FF/Latch <res_2> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <Fout_2> 
 INFO:Xst:2261 - The FF/Latch <res_13> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <Fout_13> 
 INFO:Xst:2261 - The FF/Latch <res_6> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <Fout_6> 
 INFO:Xst:2261 - The FF/Latch <res_12> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <Fout_12> 
@@ -363,6 +380,9 @@ INFO:Xst:2261 - The FF/Latch <res_1> in Unit <alu> is equivalent to the followin
 INFO:Xst:2261 - The FF/Latch <res_5> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <Fout_5> 
 INFO:Xst:2261 - The FF/Latch <res_11> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <Fout_11> 
 INFO:Xst:2261 - The FF/Latch <res_9> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <Fout_9> 
+INFO:Xst:2261 - The FF/Latch <flag_1> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <Fout_15> 
+INFO:Xst:2261 - The FF/Latch <res_8> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <Fout_8> 
+INFO:Xst:2261 - The FF/Latch <res_2> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <Fout_2> 
 
 Optimizing unit <top> ...
 
@@ -374,7 +394,7 @@ Optimizing unit <alu> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 3.
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 5.
 
 Final Macro Processing ...
 
@@ -412,17 +432,18 @@ Design Statistics
 # IOs                              : 36
 
 Cell Usage :
-# BELS                             : 806
+# BELS                             : 1045
 #      GND                         : 1
-#      LUT1                        : 3
-#      LUT2                        : 88
-#      LUT3                        : 191
-#      LUT4                        : 267
-#      LUT4_L                      : 2
+#      LUT1                        : 5
+#      LUT2                        : 97
+#      LUT3                        : 265
+#      LUT4                        : 367
+#      LUT4_D                      : 2
+#      LUT4_L                      : 4
 #      MUXCY                       : 66
-#      MUXF5                       : 124
-#      MUXF6                       : 26
-#      MUXF7                       : 5
+#      MUXF5                       : 157
+#      MUXF6                       : 40
+#      MUXF7                       : 8
 #      VCC                         : 1
 #      XORCY                       : 32
 # FlipFlops/Latches                : 59
@@ -441,9 +462,9 @@ Device utilization summary:
 
 Selected Device : 3s1200efg320-4 
 
- Number of Slices:                      301  out of   8672     3%  
+ Number of Slices:                      407  out of   8672     4%  
  Number of Slice Flip Flops:             59  out of  17344     0%  
- Number of 4 input LUTs:                551  out of  17344     3%  
+ Number of 4 input LUTs:                740  out of  17344     4%  
  Number of IOs:                          36
  Number of bonded IOBs:                  36  out of    250    14%  
  Number of GCLKs:                         1  out of     24     4%  
@@ -492,8 +513,8 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 6.981ns (Maximum Frequency: 143.246MHz)
-   Minimum input arrival time before clock: 2.840ns
+   Minimum period: 5.933ns (Maximum Frequency: 168.549MHz)
+   Minimum input arrival time before clock: 2.796ns
    Maximum output required time after clock: 7.797ns
    Maximum combinational path delay: No path found
 
@@ -524,31 +545,29 @@ Delay:               2.169ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'u2/flag_cmp_eq0000'
-  Clock period: 6.981ns (frequency: 143.246MHz)
-  Total number of paths / destination ports: 29 / 11
+  Clock period: 5.933ns (frequency: 168.549MHz)
+  Total number of paths / destination ports: 24 / 12
 -------------------------------------------------------------------------
-Delay:               6.981ns (Levels of Logic = 7)
-  Source:            u2/res_2 (LATCH)
+Delay:               5.933ns (Levels of Logic = 5)
+  Source:            u2/res_8 (LATCH)
   Destination:       u2/flag_2 (LATCH)
   Source Clock:      u2/flag_cmp_eq0000 falling
   Destination Clock: u2/flag_cmp_eq0000 falling
 
-  Data Path: u2/res_2 to u2/flag_2
+  Data Path: u2/res_8 to u2/flag_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               5   0.676   0.633  u2/res_2 (u2/res_2)
-     MUXF5:S->O            1   0.739   0.595  u2/res_2_mux00081_SW1 (N63)
-     LUT3:I0->O            1   0.704   0.000  u2/Mmux_res_2_mux0007_72 (u2/Mmux_res_2_mux0007_72)
-     MUXF5:I1->O           1   0.321   0.000  u2/Mmux_res_2_mux0007_6_f5 (u2/Mmux_res_2_mux0007_6_f5)
-     MUXF6:I0->O           1   0.521   0.000  u2/Mmux_res_2_mux0007_4_f6 (u2/Mmux_res_2_mux0007_4_f6)
-     MUXF7:I0->O           2   0.521   0.451  u2/Mmux_res_2_mux0007_2_f7 (u2/res_2_mux0007)
-     LUT4_L:I3->LO         1   0.704   0.104  u2/tmpFlag_2_mux0001352 (u2/tmpFlag_2_mux0001352)
-     LUT4:I3->O            1   0.704   0.000  u2/tmpFlag_2_mux0001375 (u2/tmpFlag_2_mux0001)
+     LD:G->Q               2   0.676   0.482  u2/res_8 (u2/res_8)
+     LUT3:I2->O            1   0.704   0.000  u2/Mmux_res_8_mux0007_6 (u2/Mmux_res_8_mux0007_6)
+     MUXF5:I0->O           2   0.321   0.451  u2/Mmux_res_8_mux0007_4_f5 (u2/Mmux_res_8_mux0007_4_f5)
+     LUT4:I3->O            1   0.704   0.420  u2/res_8_mux0003185 (u2/res_8_mux0003)
+     MUXF5:S->O            1   0.739   0.424  u2/tmpFlag_2_mux0001298_SW1 (N86)
+     LUT4:I3->O            1   0.704   0.000  u2/tmpFlag_2_mux0001361 (u2/tmpFlag_2_mux0001)
      LD:D                      0.308          u2/flag_2
     ----------------------------------------
-    Total                      6.981ns (5.198ns logic, 1.783ns route)
-                                       (74.5% logic, 25.5% route)
+    Total                      5.933ns (4.156ns logic, 1.777ns route)
+                                       (70.0% logic, 30.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'u1/current_state_FSM_FFd4'
@@ -592,7 +611,7 @@ Offset:              2.057ns (Levels of Logic = 1)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'u1/OptOp_or0000'
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Offset:              2.840ns (Levels of Logic = 2)
+Offset:              2.796ns (Levels of Logic = 2)
   Source:            InputSW<3> (PAD)
   Destination:       u1/OptOp_3 (LATCH)
   Destination Clock: u1/OptOp_or0000 falling
@@ -601,12 +620,12 @@ Offset:              2.840ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             3   1.218   0.610  InputSW_3_IBUF (InputSW_3_IBUF)
-     LUT4:I1->O            1   0.704   0.000  u1/OptOp_mux0000<3>1 (u1/OptOp_mux0000<3>)
+     IBUF:I->O             3   1.218   0.566  InputSW_3_IBUF (InputSW_3_IBUF)
+     LUT4:I2->O            1   0.704   0.000  u1/OptOp_mux0000<3>1 (u1/OptOp_mux0000<3>)
      LD:D                      0.308          u1/OptOp_3
     ----------------------------------------
-    Total                      2.840ns (2.230ns logic, 0.610ns route)
-                                       (78.5% logic, 21.5% route)
+    Total                      2.796ns (2.230ns logic, 0.566ns route)
+                                       (79.8% logic, 20.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
@@ -633,7 +652,7 @@ Offset:              7.797ns (Levels of Logic = 3)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'u1/current_state_FSM_FFd4'
   Total number of paths / destination ports: 16 / 16
 -------------------------------------------------------------------------
-Offset:              6.736ns (Levels of Logic = 3)
+Offset:              6.739ns (Levels of Logic = 3)
   Source:            u1/OptA_15 (LATCH)
   Destination:       Output<15> (PAD)
   Source Clock:      u1/current_state_FSM_FFd4 falling
@@ -642,19 +661,19 @@ Offset:              6.736ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q              37   0.676   1.343  u1/OptA_15 (u1/OptA_15)
-     LUT4:I1->O            1   0.704   0.000  u3/Mmux_Export<15>2_F (N253)
+     LD:G->Q              48   0.676   1.346  u1/OptA_15 (u1/OptA_15)
+     LUT4:I1->O            1   0.704   0.000  u3/Mmux_Export<15>2_F (N386)
      MUXF5:I0->O           1   0.321   0.420  u3/Mmux_Export<15>2 (Output_15_OBUF)
      OBUF:I->O                 3.272          Output_15_OBUF (Output<15>)
     ----------------------------------------
-    Total                      6.736ns (4.973ns logic, 1.763ns route)
+    Total                      6.739ns (4.973ns logic, 1.766ns route)
                                        (73.8% logic, 26.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'u1/current_state_FSM_FFd3'
   Total number of paths / destination ports: 16 / 16
 -------------------------------------------------------------------------
-Offset:              6.874ns (Levels of Logic = 3)
+Offset:              6.901ns (Levels of Logic = 3)
   Source:            u1/OptB_0 (LATCH)
   Destination:       Output<0> (PAD)
   Source Clock:      u1/current_state_FSM_FFd3 falling
@@ -663,44 +682,44 @@ Offset:              6.874ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q             170   0.676   1.481  u1/OptB_0 (u1/OptB_0)
+     LD:G->Q             256   0.676   1.508  u1/OptB_0 (u1/OptB_0)
      LUT4:I0->O            1   0.704   0.000  u3/Mmux_Export<0>_4 (u3/Mmux_Export<0>_4)
      MUXF5:I0->O           1   0.321   0.420  u3/Mmux_Export<0>_2_f5 (Output_0_OBUF)
      OBUF:I->O                 3.272          Output_0_OBUF (Output<0>)
     ----------------------------------------
-    Total                      6.874ns (4.973ns logic, 1.901ns route)
-                                       (72.3% logic, 27.7% route)
+    Total                      6.901ns (4.973ns logic, 1.928ns route)
+                                       (72.1% logic, 27.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'u2/flag_cmp_eq0000'
   Total number of paths / destination ports: 20 / 16
 -------------------------------------------------------------------------
-Offset:              6.030ns (Levels of Logic = 3)
-  Source:            u2/res_2 (LATCH)
-  Destination:       Output<2> (PAD)
+Offset:              6.015ns (Levels of Logic = 3)
+  Source:            u2/flag_1 (LATCH)
+  Destination:       Output<1> (PAD)
   Source Clock:      u2/flag_cmp_eq0000 falling
 
-  Data Path: u2/res_2 to Output<2>
+  Data Path: u2/flag_1 to Output<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               5   0.676   0.637  u2/res_2 (u2/res_2)
-     LUT4:I3->O            1   0.704   0.000  u3/Mmux_Export<2>_3 (u3/Mmux_Export<2>_3)
-     MUXF5:I1->O           1   0.321   0.420  u3/Mmux_Export<2>_2_f5 (Output_2_OBUF)
-     OBUF:I->O                 3.272          Output_2_OBUF (Output<2>)
+     LD:G->Q               2   0.676   0.622  u2/flag_1 (u2/flag_1)
+     LUT4:I0->O            1   0.704   0.000  u3/Mmux_Export<1>_3 (u3/Mmux_Export<1>_3)
+     MUXF5:I1->O           1   0.321   0.420  u3/Mmux_Export<1>_2_f5 (Output_1_OBUF)
+     OBUF:I->O                 3.272          Output_1_OBUF (Output<1>)
     ----------------------------------------
-    Total                      6.030ns (4.973ns logic, 1.057ns route)
-                                       (82.5% logic, 17.5% route)
+    Total                      6.015ns (4.973ns logic, 1.042ns route)
+                                       (82.7% logic, 17.3% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.17 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.62 secs
  
 --> 
 
-Total memory usage is 259432 kilobytes
+Total memory usage is 262888 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   29 (   0 filtered)
