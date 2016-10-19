@@ -50,7 +50,7 @@ begin
 			tmpA := OptA;
 			tmpB := OptB;				
 			case Op is
-				when "0000" =>
+				when "0000" => --¼Ó·¨
 					res := tmpA + tmpB;
 					if (res < tmpA) then
 						tmpFlag(3) := '1';
@@ -69,7 +69,7 @@ begin
 					else
 						tmpFlag(0) := '0';
 					end if;
-				when "0001" =>
+				when "0001" => --¼õ·¨
 					tmpC := (not tmpB) + "000000000000001";
 					res := tmpA + tmpC;
 					if (tmpA < tmpB) then
@@ -91,11 +91,11 @@ begin
 					end if;
 				when others =>
 					case Op is
-						when "0010" => res := tmpA and tmpB;
-						when "0011" => res := tmpA or tmpB;
-						when "0100" => res := tmpA xor tmpB;
-						when "0101" => res := not tmpA;
-						when "0110" =>
+						when "0010" => res := tmpA and tmpB; --and
+						when "0011" => res := tmpA or tmpB; --or
+						when "0100" => res := tmpA xor tmpB; --xor
+						when "0101" => res := not tmpA; --not
+						when "0110" => --Âß¼­×óÒÆ
 							if (tmpB >= "0000000000010000") then
 								res := "0000000000000000";
 							else
@@ -103,7 +103,7 @@ begin
 								res := "0000000000000000";
 								res(15 downto tmpInt) := tmpA(15 - tmpInt downto 0);
 							end if;
-						when "0111" =>
+						when "0111" => --Âß¼­ÓÒÒÆ
 							if (tmpB >= "0000000000010000") then
 								res := "0000000000000000";
 							else
@@ -111,7 +111,7 @@ begin
 								res := "0000000000000000";
 								res(15 - tmpInt downto 0) := tmpA(15 downto tmpInt);
 							end if;
-						when "1000" =>
+						when "1000" => --ËãÊýÓÒÒÆ
 							if (tmpB >= "0000000000010000") then
 								if (tmpA(15) = '0') then
 									res := "0000000000000000";
@@ -127,7 +127,7 @@ begin
 								end if;
 								res(15 - tmpInt downto 0) := tmpA(15 downto tmpInt);
 							end if;
-						when others =>
+						when others => --Ñ­»·×óÒÆ
 							tmpC(3 downto 0) := tmpB(3 downto 0);
 							tmpC(15 downto 4) := "000000000000";
 							tmpInt := conv_integer(tmpC);

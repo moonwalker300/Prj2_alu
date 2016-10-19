@@ -33,10 +33,10 @@ entity statemachine is
     Port ( Clk : in  STD_LOGIC;
            Rst : in  STD_LOGIC; 
            InputSW : in  STD_LOGIC_VECTOR (15 downto 0);
-			  OptA : out  STD_LOGIC_VECTOR (15 downto 0);
-			  OptB : out  STD_LOGIC_VECTOR (15 downto 0);
-			  OptOp : out  STD_LOGIC_VECTOR (3 downto 0);
-			  OutST : out STD_LOGIC_VECTOR (1 downto 0)
+			  OptA : out  STD_LOGIC_VECTOR (15 downto 0);--输出操作数A
+			  OptB : out  STD_LOGIC_VECTOR (15 downto 0);  --输出操作数B
+			  OptOp : out  STD_LOGIC_VECTOR (3 downto 0); --操作码
+			  OutST : out STD_LOGIC_VECTOR (1 downto 0) --输出状态机的状态
 			);
 end statemachine;
 

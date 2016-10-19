@@ -43,10 +43,10 @@ architecture structual of top is
 		port( Clk : in  STD_LOGIC;
            Rst : in  STD_LOGIC; 
            InputSW : in  STD_LOGIC_VECTOR (15 downto 0);
-			  OptA : out  STD_LOGIC_VECTOR (15 downto 0);
-			  OptB : out  STD_LOGIC_VECTOR (15 downto 0);
-			  OptOp : out  STD_LOGIC_VECTOR (3 downto 0);
-			  OutST : out STD_LOGIC_VECTOR (1 downto 0)
+			  OptA : out  STD_LOGIC_VECTOR (15 downto 0); 
+			  OptB : out  STD_LOGIC_VECTOR (15 downto 0); 
+			  OptOp : out  STD_LOGIC_VECTOR (3 downto 0); --Êä³ö²Ù×÷Âë
+			  OutST : out STD_LOGIC_VECTOR (1 downto 0)   
 		); end component;
 	component alu
 		port( Op : in  STD_LOGIC_VECTOR (3 downto 0);

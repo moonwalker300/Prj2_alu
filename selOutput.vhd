@@ -29,7 +29,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity selOutput is
+entity selOutput is --四选一输出，根据状态机的状态
     Port ( ST : in  STD_LOGIC_VECTOR (1 downto 0);
            Fout : in  STD_LOGIC_VECTOR (15 downto 0);
            flag : in  STD_LOGIC_VECTOR (3 downto 0);
